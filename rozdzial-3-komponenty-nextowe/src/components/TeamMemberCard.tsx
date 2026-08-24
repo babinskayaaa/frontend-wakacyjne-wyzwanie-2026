@@ -1,52 +1,62 @@
-interface TeamMemberCardProps {
+import Image from "next/image";
+import Link from "next/link";
+import { Montserrat } from "next/font/google";
+
+const roleFont = Montserrat({
+  subsets: ["latin"],
+  weight: ["600", "700"],
+});
+
+export interface TeamMemberCardProps {
   name: string;
   role: string;
-  bio: string;
+  bio?: string;
   skills: string[];
 }
 
-export default function TeamMemberCard({
+export const TeamMemberCard = ({
   name,
   role,
   bio,
   skills,
-}: TeamMemberCardProps) {
+}: TeamMemberCardProps) => {
   return (
-    <div className="flex w-full max-w-md flex-col overflow-hidden rounded-2xl bg-white shadow-lg sm:max-w-xl sm:flex-row">
-      <div className="flex h-44 items-center justify-center bg-red-400 sm:h-auto sm:w-48">
-        <div className="flex h-24 w-24 m-5 items-center justify-center rounded-full bg-black/20 text-3xl font-bold text-white">
-          {
-            name
-              .split(" ")
-              .map((w) => w[0])
-              .join("")
-              .slice(0, 2)
-              .toUpperCase()
-          }
-        </div>
+    <div className="flex max-w-md flex-col items-center rounded-2xl border border-slate-800 bg-slate-900 p-8 text-center text-white shadow-2xl">
+      
+      <div className="relative mb-4 h-32 w-32 overflow-hidden rounded-full border-4 border-cyan-500 shadow-lg">
+        <Image
+          src="/avatar.jpg"
+          alt={`${name} avatar`}
+          fill
+          className="object-cover"
+          priority
+        />
       </div>
-      <div className="flex flex-col gap-4 p-6">
-        <div>
-          <h2 className="text-xl font-bold text-gray-900">{name}</h2>
-          <p className="mt-1 text-sm font-medium text-red-700 font-mono">{role}</p>
-        </div>
-        <p className="text-sm leading-6 text-gray-600">{bio}</p>
-        <div>
-          <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-500">
-            Umiejętności
-          </h3>
-          <ul className="mt-2 flex flex-wrap gap-2">
-            {skills.map((skill) => (
-              <li
-                key={skill}
-                className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700"
-              >
-                {skill}
-              </li>
-            ))}
-          </ul>
-        </div>
+
+      <h2 className="text-2xl font-bold tracking-tight text-white">{name}</h2>
+      
+      <p className={`${roleFont.className} mt-1 text-sm font-semibold uppercase tracking-wider text-cyan-400`}>
+        {role}
+      </p>
+
+      <p className="mt-4 text-sm leading-relaxed text-slate-300">
+        {bio}
+      </p>
+
+      <div className="mt-5 flex flex-wrap justify-center gap-2">
+        {skills.map((skill) => (
+          <span key={skill} className="rounded-full border border-cyan-500/40 bg-cyan-950/50 px-3 py-1 text-xs font-medium text-cyan-300">
+            {skill}
+          </span>
+        ))}
+      </div>
+
+      <div className="mt-6">
+        <Link
+          href="https://solvro.pwr.edu.pl"rel="noopener noreferrer" className="inline-block rounded-xl bg-cyan-500 px-5 py-2.5 text-xs font-bold text-slate-950 shadow-md transition hover:bg-cyan-400 active:scale-95">
+          Dowiedz się więcej
+        </Link>
       </div>
     </div>
   );
-}
+};
