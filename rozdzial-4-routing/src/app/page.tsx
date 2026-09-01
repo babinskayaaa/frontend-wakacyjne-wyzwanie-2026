@@ -1,21 +1,19 @@
-import { UserProfileList } from "../components/UserProfilesList";
+import Link from "next/link";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="min-h-screen flex flex-col justify-between items-center mx-auto max-w-5xl p-8 text-center">
-      <header>
-        <h1 className="text-4xl font-bold mb-4">
-          Witamy w "Wakacyjnym wyzwaniu"
-        </h1>
-        <p className="text-gray-600 text-lg">
-          Sprawdź <span className="underline font-bold">README.md</span> i
-          zobacz co dla Ciebie przygotowaliśmy
-        </p>
-      </header>
-
-      <div className="w-full my-auto py-8">
-        <UserProfileList />
+    <div className="text-center py-16 space-y-6">
+      <h1 className="text-4xl font-extrabold tracking-tight">
+        Witaj w Katalogu Użytkowników
+      </h1>
+      <p className="text-lg text-gray-600 max-w-xl mx-auto">
+        Aplikacja demonstracyjna prezentująca App Router, dynamiczne ścieżки oraz zaawansowane wzorce routingu w Next.js.
+      </p>
+      <div>
+        <Link href="/users" className="inline-block bg-blue-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+          Przejdź do listy użytkowników
+        </Link>
       </div>
-    </main>
+    </div>
   );
 }
