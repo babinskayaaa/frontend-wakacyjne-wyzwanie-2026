@@ -1,0 +1,1 @@
+self.__INTERCEPTION_ROUTE_REWRITE_MANIFEST="[{\"source\":\"/users/:nxtPid\",\"destination\":\"/(.)users/:nxtPid\",\"has\":[{\"type\":\"header\",\"key\":\"next-url\",\"value\":\"/.*\"}],\"regex\":\"^\\\\/users(?:\\\\/([^\\\\/]+?))(?:\\\\/)?$\"}]";

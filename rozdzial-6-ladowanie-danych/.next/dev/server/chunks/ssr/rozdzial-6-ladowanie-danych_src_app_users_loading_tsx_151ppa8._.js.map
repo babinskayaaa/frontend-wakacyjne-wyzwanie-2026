@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///home/palina/frontend-wakacyjne-wyzwanie-2026/rozdzial-6-ladowanie-danych/src/app/users/loading.tsx"],"sourcesContent":["import { Spinner } from \"@/src/components/ui/spinner\";\n\nexport default function Loading() {\n  return (\n    <div className=\"grid place-items-center w-full py-12\">\n      <div className=\"w-full flex items-center justify-center gap-2\">\n        <Spinner className=\"size-7\" />\n        <span className=\"text-lg\">Loading users</span>\n      </div>\n    </div>\n  )\n}"],"names":["Loading","className","Spinner"],"mappings":";;;;;;;;;;;;AAEe,SAASA;IACtB,qBACE,sRAAC;QAAIC,WAAU;kBACb,cAAA,sRAAC;YAAIA,WAAU;;8BACb,sRAACC;oBAAQD,WAAU;;;;;;8BACnB,sRAAC;oBAAKA,WAAU;8BAAU;;;;;;;;;;;;;;;;;AAIlC"}}]
+}

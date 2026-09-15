@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":["file:///home/palina/frontend-wakacyjne-wyzwanie-2026/rozdzial-6-ladowanie-danych/src/app/favicon.ico.mjs%20(structured%20image%20object)"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 256, height: 256 }\n"],"names":["src","width","height"],"mappings":";;;;AAAA;;uCACe;IAAEA,KAAAA,kLAAG;IAAEC,OAAO;IAAKC,QAAQ;AAAI"}},
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file:///home/palina/frontend-wakacyjne-wyzwanie-2026/rozdzial-6-ladowanie-danych/src/app/page.tsx"],"sourcesContent":["\nexport default function Home() {\n  return (\n    <div className=\"min-h-screen flex flex-col justify-between items-center mx-auto max-w-5xl p-8 text-center\">\n      <header>\n        <h1 className=\"text-4xl font-bold mb-4\">\n          Witamy w \"Wakacyjnym wyzwaniu\"\n        </h1>\n        <p className=\"text-gray-600 text-lg\">\n          Sprawdź <span className=\"underline font-bold\">README.md</span> i\n          zobacz co dla Ciebie przygotowaliśmy\n        </p>\n      </header>\n    </div>\n  );\n}\n"],"names":["Home","className"],"mappings":";;;;;;AACe,SAASA;IACtB,qBACE,sRAAC;QAAIC,WAAU;kBACb,cAAA,sRAAC;;8BACC,sRAAC;oBAAGA,WAAU;8BAA0B;;;;;;8BAGxC,sRAAC;oBAAEA,WAAU;;wBAAwB;sCAC3B,sRAAC;4BAAKA,WAAU;sCAAsB;;;;;;wBAAgB;;;;;;;;;;;;;;;;;;AAMxE"}}]
+}

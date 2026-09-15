@@ -1,0 +1,3 @@
+module.exports=[13592,a=>{"use strict";a.s(["default",()=>b]);let b=(0,a.i(15798).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/rozdzial-6-ladowanie-danych/src/app/users/error.tsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/rozdzial-6-ladowanie-danych/src/app/users/error.tsx","default")},79909,a=>{"use strict";var b=a.i(13592);a.n(b)},38347,function(a){a.n(a.i(79909))}];
+
+//# sourceMappingURL=rozdzial-6-ladowanie-danych_src_app_users_error_tsx_0v1b308._.js.map
