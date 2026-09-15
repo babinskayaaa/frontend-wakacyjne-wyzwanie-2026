@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../rozdzial-6-ladowanie-danych/src/app/%40modal/default.tsx"],"sourcesContent":["export default function DefaultModal() {\n  return null;\n}"],"names":["DefaultModal"],"mappings":"wDAAe,SAASA,EACtB,OAAO,IACT"}
