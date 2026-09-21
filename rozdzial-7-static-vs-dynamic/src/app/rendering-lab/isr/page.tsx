@@ -1,6 +1,6 @@
 import { CurrentTimeCard } from "@/components/current-time-card";
 
-// TODO: Dodaj revalidate = 10 i obserwuj stale-while-revalidate.
+export const revalidate = 10;
 export default function IsrPage() {
   return (
     <CurrentTimeCard

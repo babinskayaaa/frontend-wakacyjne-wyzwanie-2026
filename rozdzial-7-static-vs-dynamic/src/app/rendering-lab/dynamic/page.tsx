@@ -1,6 +1,6 @@
+export const dynamic = "force-dynamic";
 import { CurrentTimeCard } from "@/components/current-time-card";
 
-// TODO: Dodaj konfigurację, która wymusi renderowanie przy każdym żądaniu.
 export default function DynamicPage() {
   return (
     <CurrentTimeCard

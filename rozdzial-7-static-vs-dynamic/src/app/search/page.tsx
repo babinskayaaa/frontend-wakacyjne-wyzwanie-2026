@@ -1,3 +1,14 @@
+import type { Metadata } from "next";
+
+export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Wyszukiwanie produktów",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 import Link from "next/link";
 
 import { ProductCard } from "@/components/product-card";

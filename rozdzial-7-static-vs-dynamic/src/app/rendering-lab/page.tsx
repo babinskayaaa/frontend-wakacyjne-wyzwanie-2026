@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+export const dynamic = "force-static";
 const routes = [
   ["/rendering-lab/static", "Statyczna"],
   ["/rendering-lab/dynamic", "Dynamiczna"],
